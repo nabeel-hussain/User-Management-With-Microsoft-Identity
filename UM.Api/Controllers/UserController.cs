@@ -36,12 +36,6 @@ namespace UM.Api.Controllers
 
         }
         [HttpGet]
-        public async Task<CreateUserResponse> GetUsersListByHotelId(CreateUserCommand createUserCommand)
-        {
-            return await Mediator.Send(createUserCommand);
-
-        }
-        [HttpGet]
         public async Task<CreateUserResponse> GetUserById(CreateUserCommand createUserCommand)
         {
             return await Mediator.Send(createUserCommand);
